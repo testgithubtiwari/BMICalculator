@@ -160,7 +160,9 @@ public class MainActivity extends AppCompatActivity {
                     intent.putExtra("age",age2);
                     intent.putExtra("height",mintprogress);
                     intent.putExtra("weight",weight2);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                     startActivity(intent);
+
                 }
 
             }

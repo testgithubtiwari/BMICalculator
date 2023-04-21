@@ -4,31 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#1C9762"
+    android:background="@drawable/bottom_nav_background"
     tools:context=".splash">
-
-
     <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
         android:id="@+id/logo"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
         android:layout_centerInParent="true"
-        android:background="@drawable/bmifinall"
-        />
+        android:background="@drawable/bmifinall" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="BMI CALCULATOR"
         android:textStyle="bold"
         android:fontFamily="@font/raleway"
-        android:textColor="@color/white"
-        android:textSize="30sp"
+        android:textColor="#D8000000"
+        android:textSize="@dimen/_16ssp"
         android:layout_below="@+id/logo"
-        android:layout_marginTop="30dp"
-        android:lineSpacingExtra="2dp"/>
-
-
-
+        android:layout_marginTop="@dimen/_20sdp"
+        android:lineSpacingExtra="@dimen/_1sdp"
+        android:id="@+id/welcome"/>
 </RelativeLayout>
